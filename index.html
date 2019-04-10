@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="imagehover.css">
+    
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+
+</head>
+<style>
+    html,body
+    {
+      margin: 0%;
+      padding: 0%''
+    }
+    body::-webkit-scrollbar
+    {
+        width: 4px;
+    }
+    body::-webkit-scrollbar-thumb
+    {
+      background-color: orange;
+    }
+
+    *
+    {
+        box-sizing: border-box;
+    }
+    .one
+    {
+        height:120vh;
+        width: 100%;
+        
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .nav
+    {
+        width: 100%;
+        height: 8%;
+        background-color: black;
+        display: flex;
+        position: fixed;
+        z-index: 500;
+                
+    }
+    .logo
+    {
+         width: 12%;
+        height: 100%;
+         margin-left: 3%;
+        background-image: url('l.png');
+        background-size: 90% 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        
+         
+    }
+    .menu_link
+    {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0%;
+            right: 10%;
+
+
+    }
+    .menu_link>a
+    {
+      margin-right: 4%;
+        text-decoration: none;
+       color:white;
+            
+         display: inline-block;
+         width: 20%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       right: -50%;
+
+            
+    }
+    .two
+    {
+        height: 20vh;
+        width: 100%;
+       margin-top: 3%;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .text
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .three
+    {
+        height: 100vh;
+        width: 100%;
+        margin-top: -8%;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        
+    }
+    .t1,.t2,.t3
+    {
+        width: 27%;
+        height: 70%;
+        border-radius: 10px;
+        margin: 2%;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+        margin-top: 8%;
+       
+    }
+    .image
+    {
+        width: 100%;
+        height: 60%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+       
+        
+    }
+    .info
+    {
+        width: 100%;
+        height: 40%;
+        margin-top: 7%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    .t1>.image
+    {
+    
+        background-size: cover;
+    }
+    .t2>.image
+    {
+        background-image: url('a.jpg');
+        background-size: cover;
+    }
+    .t3>.image
+    {
+        background-image: url('d.jpg');
+        background-size: cover;
+    }
+    .four
+    {
+        height: 90vh;
+        width: 100%;
+        
+        display: flex;
+        align-content: center;
+    }
+    .four1
+    {
+        height: 10%;
+        width:100%;
+       
+        position: absolute;
+        margin-top: 3%;
+       
+    }
+    .content
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: -8%;
+    }
+    .four2
+    {
+        height: 60%;
+        width: 35%;
+        
+        margin-top: 8%;
+        margin-left: 2%;
+        background-image: url('b.jpg');
+        background-size: cover;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    }
+    .four3
+    {
+        height: 60%;
+        width: 55%;
+       
+        margin-top: 8%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    .lorem
+    {
+        width: 100%;
+        height: 40%;
+        margin-top: 7%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    .five
+    {
+       height: 90vh;
+       width: 100%;
+        
+       margin-top: -10vh;
+       display: flex;
+    }
+    .five1,.five2,.five3,.five4
+    {
+        width: 28%;
+        height: 65%;
+        border-radius: 10px;
+        margin: 2%;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+        margin-top: 8%;
+       
+    }
+    .five>.five1
+    {
+        background-image: url('1.jpg');
+        background-size: cover;
+    }
+    .five>.five2
+    {
+        background-image: url('2.jpg');
+        background-size: cover;
+    }
+    .five>.five3
+    {
+        background-image: url('3.jpg');
+        background-size: cover;
+    }
+    .five>.five4
+    {
+        background-image: url('4.jpg');
+        background-size: cover;
+    }
+    .five5
+    {
+        height: 10%;
+        width:100%;
+      
+        position: absolute;
+        margin-top: 1%;
+       
+    }
+    .fivetext
+    {
+        width: 100%;
+        height: 20%;
+        margin-top: -2.5%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .six
+    {
+        height: 50vh;
+        width: 100%;
+        
+        display: flex;
+        margin-top: -5%;
+        background-color: rgb(39,57, 67);
+       
+    }
+    .six1,.six2,.six3,.six4
+    {
+        height: 70%;
+        width: 30%;
+       
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        
+        
+        
+    }
+    .head
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: left; 
+        color: white;
+    }
+    .decs
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+        text-align: left; 
+        color: white;
+    }
+   .seven
+   {
+       height: 10vh;
+       width: 100%;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+       font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(23, 34, 38);
+        display: flex;
+
+   }
+   .fa-twitter
+   {
+       font-size: 30px;
+       color:red;
+   }
+    
+    
+</style>
+<body>
+   <div class="one">   
+        <div class="nav">
+           <div class="logo"></div>
+            <div class="menu_link">
+                    <a href="index.html" class="hvr-underline-from-center hvr-fade">Home</a>
+                    <a href="about.html" class="hvr-underline-from-center hvr-fade">About Us</a>
+                    <a href="G:\web development\CSS project work\toon.html" class="hvr-underline-from-center hvr-fade">contact Us</a>
+                    <a href="#" class="hvr-underline-from-center hvr-fade">Mostly Shopped</a>
+            </div>
+           
+    
+        </div> 
+
+
+        <div id="wowslider-container1">
+            
+          <div class="ws_images"><ul>
+            <li><img src="data1/images/abandonedbrokenchair158229.jpg" alt="Welcome" title="Welcome" id="wows1_0"/></li>
+            <li><img src="data1/images/asphaltdarkdawn531321.jpg" alt="Welcome" title="Welcome" id="wows1_1"/></li>
+            <li><img src="data1/images/benchcontoursdark8771.jpg" alt="Welcome" title="Welcome" id="wows1_2"/></li>
+            <li><a href="http://wowslider.net"><img src="data1/images/blurredlinesbuildingbuildings68425.jpg" alt="http://wowslider.net/" title="Welcome" id="wows1_3"/></a></li>
+            <li><img src="data1/images/cobblesdarklight69791.jpg" alt="Welcome" title="Welcome" id="wows1_4"/></li>
+            </ul>
+        </div>
+        <div class="ws_bullets"><div>
+            <a href="#" title="Welcome"><span><img src="data1/tooltips/abandonedbrokenchair158229.jpg" alt="Welcome"/>1</span></a>
+            <a href="#" title="Welcome"><span><img src="data1/tooltips/asphaltdarkdawn531321.jpg" alt="Welcome"/>2</span></a>
+            <a href="#" title="Welcome"><span><img src="data1/tooltips/benchcontoursdark8771.jpg" alt="Welcome"/>3</span></a>
+            <a href="#" title="Welcome"><span><img src="data1/tooltips/blurredlinesbuildingbuildings68425.jpg" alt="Welcome"/>4</span></a>
+            <a href="#" title="Welcome"><span><img src="data1/tooltips/cobblesdarklight69791.jpg" alt="Welcome"/>5</span></a>
+        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+        <div class="ws_shadow"></div>
+        </div>	
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+    </div>
+      
+   <div class="two">
+       <div class="text wow fadeInUp animated"><marquee  direction=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo a, dolore cumque sequi officia id repudiandae,
+            explicabo earum incidunt aut veniam natus inventore modi nesciunt est porro rem suscipit illum.</marquee></div>
+   </div>
+   <div class="three">
+          <div class="t1 hvr-shrink">
+              <div class="image">
+                <figure class="imghvr-shutter-out-diag-1" style="height:100%;width:100%;">
+                    <img src="c.jpg" style="height:100%;width:100%;">
+                    <figcaption style="height:100%;width:100%; background-image:url('a.jpg');">
+                      // Hover Content
+                    </figcaption>
+                  </figure>
+              </div>
+              <div class="info wow fadeInUp animated">
+                  <h1>What we are?</h1>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo a, dolore cumque sequi officia id repudiandae,
+                     explicabo earum incidunt aut veniam natus inventore modi nesciunt est porro rem suscipit illum.
+              </div>
+          </div>
+          <div class="t2 hvr-shrink">
+                <div class="image"></div>
+                <div class="info wow fadeInUp animated">
+                    <h1>Start Project</h1>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo a, dolore cumque sequi officia id repudiandae,
+                        explicabo earum incidunt aut veniam natus inventore modi nesciunt est porro rem suscipit illum.
+                </div>
+          </div>
+          <div class="t3 hvr-shrink">
+                <div class="image"></div>
+                <div class="info wow fadeInUp animated">
+                       <h1>Our Team</h1>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo a, dolore cumque sequi officia id repudiandae,
+                        explicabo earum incidunt aut veniam natus inventore modi nesciunt est porro rem suscipit illum.
+                </div>
+          </div>
+          
+          </div>
+
+   <div class="four">
+       <div class="four1 hvr-float">
+           <div class="content wow fadeInUp animated">
+           <h1 style="height:40%;width:80%;"> OUR FEATURES</h1>
+           </div>
+       </div>
+       <div class="four2 hvr-push"></div>
+       <div class="four3">
+           <div class="lorem hvr-pulse">
+               <h1>LOREM IS SIMPLE</h1>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo a, dolore cumque sequi officia id repudiandae,
+               explicabo earum incidunt aut veniam natus inventore modi nesciunt est porro rem suscipit illum.
+               
+           </div>
+       </div>
+   </div>
+   <div class="five">
+       <div class="five1 hvr-skew"></div>
+       <div class="five2  hvr-skew"></div>
+       <div class="five3  hvr-skew"></div>
+       <div class="five4  hvr-skew"></div>
+       <div class="five5">
+           <div class="fivetext wow fadeInUp animated">
+               <h1>OUR LATEST PRODUCT</h1>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit
+
+           </div>
+       </div>
+   </div>
+
+
+
+
+   <div class="six">
+       <div class="six1">
+           <div class="head hvr-pop">
+             <h1>Client</h1>
+           </div>
+           <div class="decs wow fadeInUp animated">
+               <li>Google</li>
+               <li>Facebook</li>
+               <li>Gmail</li>
+               <li>Twiter</li>
+               <li>Instagram</li>
+           </div>
+        </div>
+       <div class="six2">
+                   <div class="head hvr-pop">
+                    <h1>Contact</h1>
+                    </div>
+                    <div class="decs wow fadeInUp animated">
+                         <li>18000526</li>
+                         <li>Facebook</li>
+                          lorem is simple to use .....
+                         </div>
+       </div>
+       <div class="six3">
+                <div class="head hvr-pop">
+                    <h1>Tweets</h1>
+                </div>
+                    <div class="decs wow fadeInUp animated"><i class="fab fa-twitter"></i>
+                            lorem is simple to use  lorem is simple to use
+                            lorem is simple to use lorem is simple to use.....
+                    </div> 
+       </div>
+       <div class="six4">
+                   <div class="head hvr-pop">
+                    <h1>News</h1>
+                    </div>
+                           <div class="decs wow fadeInUp animated">
+                            <li>18000526</li>
+                            <li>Facebook</li>
+                            lorem is simple & perfect lorem is simple & perfect
+                            </div>
+       </div>     
+   </div>
+   <div class="seven hvr-pop"><marquee >This is the End of the page.</marquee></div>
+   
+
+</body>
+</html>
